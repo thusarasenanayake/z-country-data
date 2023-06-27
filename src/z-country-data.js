@@ -1,10 +1,10 @@
 import countryData from "./countryData.json";
 
-export const getCountries = () => {
+const getCountries = () => {
   return countryData.map((country) => country.name);
 };
 
-export const getCurrencyCodes = () => {
+const getCurrencyCodes = () => {
   const currencyCodes = new Set();
 
   countryData.forEach((country) => {
@@ -23,4 +23,8 @@ export const getCountryData = (countryName) => {
   return null;
 };
 
-
+export default {
+  getCountries,
+  getCountryData,
+  getCurrencyCodes,
+};
