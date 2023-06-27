@@ -1,0 +1,31 @@
+{
+  "name": "z-country-data",
+  "version": "1.0.0",
+  "description": "custom filtered country data",
+  "main": "index.js",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thusarasenanayake/z-country-data.git"
+  },
+  "keywords": [
+    "country",
+    "currencies",
+    "flags"
+  ],
+  "author": "Thusara Senanayake <89896736+thusarasenanayake@users.noreply.github.com> (http://thusarasenanayake.github.io)",
+  "license": "MIT",
+  "scripts": {
+    "build": ". scripts/build.sh"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.22.5",
+    "@babel/core": "7.22.5",
+    "@babel/preset-env": "7.22.5",
+    "axios": "1.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/thusarasenanayake/z-country-data/issues"
+  },
+  "homepage": "https://github.com/thusarasenanayake/z-country-data#readme"
+}
