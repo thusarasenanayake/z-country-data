@@ -1,4 +1,4 @@
-const countryData = require("./countryData.json");
+import countryData from "./countryData.json";
 
 const getCountries = () => {
   return countryData.map((country) => country.name);
@@ -16,16 +16,14 @@ const getCurrencyCodes = () => {
 };
 
 const getCountryData = (countryName) => {
-  const country = countryData.find(
-    (country) => country.name === countryName
-  );
+  const country = countryData.find((country) => country.name === countryName);
   if (country) {
-    return country
+    return country;
   }
   return null;
 };
 
-module.exports = {
+export default {
   getCountries,
   getCountryData,
   getCurrencyCodes,

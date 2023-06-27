@@ -1,10 +1,8 @@
 {
   "presets": ["@babel/preset-env"],
   "comments": false,
-  "minified" : true,
+  "minified": true,
   "env": {
-    "production": {
-      
-    }
+    "production": {}
   }
 }

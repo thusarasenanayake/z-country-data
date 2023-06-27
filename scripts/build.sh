@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
-node scripts/fetcher
+# node scripts/fetcher
 
-./node_modules/.bin/babel  src/ --out-dir lib/ --env-name production --copy-files
+./node_modules/.bin/vite  build
+./node_modules/.bin/terser  ./dist/z-country-data.js --output ./dist/z-country-data.js
+
+
