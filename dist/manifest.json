@@ -1,0 +1,7 @@
+{
+  "src/z-country-data.js": {
+    "file": "z-country-data.umd.cjs",
+    "isEntry": true,
+    "src": "src/z-country-data.js"
+  }
+}
