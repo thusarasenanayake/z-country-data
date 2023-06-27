@@ -8,6 +8,8 @@ export default {
     },
     minify: true,
     target: ["es2015", "safari11", "ios11"],
+    rollupOptions: {
+      external: ["z-country-data"],
+    },
   },
-
 };

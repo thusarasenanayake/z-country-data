@@ -1,6 +1,11 @@
-const axios = require("axios");
-const fs = require("fs");
+import axios from "axios";
+import { writeFileSync } from "fs";
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+
 const API_URL = "https://restcountries.com/v3.1/all";
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const fetchData = async () => {
   try {
@@ -27,7 +32,7 @@ const fetchData = async () => {
     }
     const jsonData = JSON.stringify(formattedData);
 
-    fs.writeFileSync(
+    writeFileSync(
       `${__dirname}/../src/countryData.json`,
       jsonData,
       "utf8",
